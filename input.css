@@ -1,0 +1,108 @@
+
+@import "tailwindcss";
+@theme{
+
+--color-average: #dbd8d8
+}
+
+@layer components{
+    .navbar{
+        @apply p-[1rem]  sticky top-0 border-b-1 bg-average border-average ;
+    }
+    .navbar-container{
+        @apply ml-7 md:flex justify-between ;
+    }
+    .logo-container{
+        @apply h-12;
+    }
+    .nav-right{
+        @apply mr-4 mt-2 ;
+    }
+    .list-container{
+     @apply flex p-1 gap-6 font-semibold;
+    }
+    .links{
+        @apply hover:text-gray-600;
+    }
+
+    .container{
+        @apply w-full ml-auto mr-auto mt-10 sm:w-[620px] md:w-[768px] lg:w-[1000px] xl:w-[1220px] 2xl:w-[1500px];
+    }
+
+    /* hero section */ 
+
+    .hero-container{
+      @apply flex flex-col justify-center;  
+    }
+
+    .title{
+        @apply text-center mb-3;
+    }
+    .head{
+        @apply font-bold text-4xl;
+    }
+    .pera{
+        @apply text-center mb-4 text-gray-600;
+    }
+    .hero-image{
+        @apply ml-auto mr-auto
+    }
+    .button{
+        @apply  flex  justify-center gap-4 mt-6 flex-col md:flex md:flex-row;
+    }
+    .btn1{
+        @apply bg-gray-300 border-gray-300 pt-[12px] pb-[12px] pl-[80px] pr-[80px]
+        rounded-2xl hover:bg-gray-400
+    }
+    .btn2{
+        @apply bg-black text-white border-black pt-[12px] pb-[12px] pl-[85px] pr-[85px] 
+        rounded-2xl hover:bg-gray-700
+    }
+
+    /* product section */
+    .products-container{
+        @apply flex flex-col gap-4 items-center mt-[100px] justify-center md:flex md:flex-row;
+    }
+    .product-title{
+        @apply text-[18px] font-bold mt-3;
+    }
+    .product-description{
+        @apply text-gray-600;
+    }
+
+
+
+
+    .company-title{
+        @apply justify-center text-center mb-12 mt-20
+    }
+    .head{
+        @apply mb-4 ;
+    }
+    .company-logos{
+        @apply w-[200px] ml-auto mr-auto grid grid-cols-2 gap-7 md:grid-cols-6 md:w-[760px] mt-10 ;
+    }
+
+
+    /* footer section */
+
+    .footer-container{
+        @apply  md:grid md:grid-cols-3 
+        mt-18 border-t-2 border-black bg-black text-white;
+
+    }
+
+    .footer-category{
+        @apply p-4 ml-5
+    }
+    .heading{
+        @apply font-semibold mb-3
+    }
+    .links-text{
+        @apply text-gray-400 text-[13px] hover:text-blue-700 hover:bg-gray-900;
+    }
+
+}
+
+
+
